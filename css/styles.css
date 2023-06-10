@@ -1,0 +1,89 @@
+/*id*/
+/*class*/
+.estrella-recomendacion{
+    color:yellow;
+    border-color: yellow;
+}
+.logo{
+    width: 9%;
+    margin: 3px;
+    margin-left: 20px;
+    padding: 1px;
+}
+
+.titulo{
+    width: 48%;
+    height: fit-content;
+    color:white;
+    font-family: 'lobster';
+    margin:5px;
+    padding: 0 5px;
+}
+
+.btn{
+    margin: 0 5px;  
+    margin-bottom: 5px;
+    color:white;
+    border-color: #F5B041;
+    font-size: 1em;
+}
+/*etiqueta*/
+nav{
+
+}
+nav,ul{
+    margin: 0;
+    padding: 0%;
+    display: flex;
+    align-items: center;
+    justify-items: start;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    align-content: center;
+    justify-content: start;
+    width: 100%;
+    height:fit-content;
+    background-color:#E67E22;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: 0;
+    margin-bottom: 3px;
+}
+.redes{
+    background-color: tomato;
+}
+
+/*resposi*/
+/** Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    .titulo{
+        color:blue;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+.titulo{
+    color:red;
+}
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .titulo{
+        color:green;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}
