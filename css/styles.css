@@ -1,85 +1,338 @@
-/*id*/
-/*class*/
-.estrella-recomendacion{
-    color:yellow;
-    border-color: yellow;
-}
-.logo{
-    width: 9%;
-    margin: 3px;
-    margin-left: 20px;
-    padding: 1px;
-}
-
-.titulo{
-    width: 48%;
-    height: fit-content;
-    color:white;
-    font-family: 'lobster';
-    margin:5px;
-    padding: 0 5px;
-}
-
-.btn{
-    margin: 0 5px;  
-    margin-bottom: 5px;
-    color:white;
-    border-color: #F5B041;
-    font-size: 1em;
-}
-/*etiqueta*/
-nav{
-
-}
-nav,ul{
-    margin: 0;
-    padding: 0%;
-    display: flex;
-    align-items: center;
-    justify-items: start;
-}
-
 body{
     width: 100%;
     min-height: 100vh;
     margin: 0 auto;
+    background-color: whitesmoke;
 }
 
-header{
+/**/
+.nav-head{
+    width: 100%;
+    height:80px;
+    background-color: rgb(230, 126, 34 );
+    font-family: 'lobster';
+    color: rgb(194, 37, 37);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0px 7px 21px 1px rgba(212,212,212,1);
+}
+.img-logo{
+    box-shadow: 0px 7px 21px 1px rgb(226, 127, 40);
+}
+#btn-filtro{
+    display: flex;
+    justify-content: end;   
+    margin: 0.2% 5% 0.5% 0;
+}
+
+.filtro{
+    font-family: 'cambria';
+    letter-spacing: 0.2em;
+    box-shadow: 0px 7px 21px 1px rgba(212,212,212,1);
+}
+.buscar,.eslogan,.restaurantes{
+    width: 100%;
+    height: auto;
+    background-color: rgb(249, 249, 249 );
+    margin: 8px 0;
+    border-radius: 15px;
+    box-shadow: 0px 0px 9px 0px rgb(228, 228, 228);
+}
+.eslog{
+    width: 55%;
+    height: auto;
     display: flex;
     align-content: center;
-    justify-content: start;
-    width: 100%;
-    height:fit-content;
-    background-color:#E67E22;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    margin: 0;
-    margin-bottom: 3px;
+    justify-content: center ;
 }
-.redes{
-    background-color: tomato;
+#eslogan{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+#buscar{
+    width: 100%;
+    margin: 0;
+    padding:3px;
+}
+.text-eslogan{
+    width: 39%;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 1%;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+}
+#dire,#nobre-restaurante,#cantidad-personas,#numero-personas,#precionn{
+    width: 100%;
+    height: inherit;
+    padding: 1%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+input,select{
+    margin-left: 2px;
+    border-radius: 5px;
+    border-color:whitesmoke;
+    color: rgb(196, 112, 39);
+}
+p{
+    margin: 1.5% 0;
 }
 
+.cont-nav{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.titulo,.logo{
+    margin: auto 6px;
+}
+footer,.redes-contactos{
+    width: 100%;
+    height: fit-content;
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+footer{
+    margin-top: 8px;
+    background-color: rgb(230, 126, 34 );
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+.redes{
+    margin: 1%;
+    color: whitesmoke;
+    letter-spacing: 0.09em;
+}
+.nombre-red-social{
+    font-size: 0.8em;
+}
+img{
+    max-width: 100%;
+}
+.name-negocio{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 2.4rem;
+    right: 4rem;
+}
+.logo{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top:1.5rem;
+    left: 1.110rem;
+}
+/*menu*/
+.toggle-menu{
+    position: absolute;
+    top: 0.5rem;
+    right: 1.5rem;
+    cursor: pointer;
+    filter: invert(1);
+    width: 40px;
+    z-index: 1;
+}
+
+.main-menu{
+    background-color: rgb(230, 126, 34 );
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*para desaparecer del liezo*/
+    
+    transition:trasnform 0.3s;
+    transform:translateY(-100%);
+
+}
+.main-menu--show{
+    transform: translateY(0);
+    width: 100%;
+}
+
+.link-menu{
+    border-color: rgb(196, 112, 39);
+    color:white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.menu-links-list{
+    padding: 0.8em;
+}
+.restaurantes{
+    display: flex;
+    flex-wrap:wrap;
+}
+.nombre-rest{
+    width: 65%;
+    font-family: 'lobster';
+    padding: 0 2%;
+    margin: 0;
+}
+.cont-logo-rest{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4% 0;
+    padding: 2%;
+}
+.estrella-recomendacion{
+    color: rgb(255, 255, 102);
+    margin: 0;
+    display: flex;
+    position: relative;
+}
+.logo-restaurante{
+    padding-left: 3%;
+}
+.cont-nav-pag,.example,.pagination{
+    margin: 0;
+    padding: 0;
+}
+.page-link{
+    color: rgb(230, 126, 34 );
+    box-shadow: 0px 0px 9px 0px rgb(228, 228, 228);
+    cursor: pointer;
+}
+.cont-nav-pag{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.descripcion-rest{
+    margin: 0;
+    padding:2.5%;
+    width: 100%;
+    font-size: 0.75em;
+    font-size: 12;
+}
+.enlace-direccion-rest{
+    color: rgb(133, 133, 133);
+}
+.enlace-direccion-rest,.reserva-btn{
+    text-decoration: none;
+    cursor: pointer;
+}
+.cont-reserva{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    width: 100%;
+    height: 22px;
+    padding: 1%;
+}
+.reserva-btn{
+    font-size: 0.75em;
+    background-color: rgb(230, 126, 34 );
+    padding: 1%;
+    letter-spacing: 0.125em;
+    margin: 0 2% 0 0;
+    font-family: lobster;
+    color:white;
+}
+.cont-descrip-resta{
+    width: 100%;
+}
+.cont-restaurante{
+    height: fit-content;
+    flex-grow: 1;
+    flex-basis: 100px;
+    width: 55%;
+    height: 330px;
+    margin: 2%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 2px 0px rgb(163, 163, 163);
+  
+}
+@media screen and (min-width:373px) {
+    .name-negocio{
+        right: 6rem;
+    }
+    .cont-restaurante{
+        margin:2.7%;
+    }
+}
+@media screen and (min-width:392px) {
+    .cont-restaurante{
+        margin:3.9%;
+    }
+}
 /*resposi*/
 /** Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
-    .titulo{
-        color:blue;
+    .nav-head{
+        color: black;
     }
+    .eslogan{
+        padding: 10px;
+    } .name-negocio{
+        right: 6rem;
+    }
+    .cont-restaurante{
+        margin:3%;
+    }
+ 
  }
-
 /* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
-.titulo{
-    color:red;
+ @media screen and (min-width: 769px) {
+    .main-menu{
+        flex-direction: row;
+        transform: translateY(0);
+    }
+    .toggle-menu{
+        display: none;
+    }
 }
-}
-
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
     .titulo{
         color:green;
+    }
+     .nav-head{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+    .main-nav{
+        width: 59%;
+        padding: 1px;
+    }
+    .menu-links-list{
+        width: 100%;
+        padding: 1%;
+    }
+    .main-menu{
+        width: 100%;
+        font-size: 0.85em;
+    }
+    .name-negocio{
+        top:20px;
+        left:90px;
+    }
+    .logo{
+        top:18px;
+        left:20px;
+    }
+    .buscar{
+        height: 232px;
     }
 }
 
