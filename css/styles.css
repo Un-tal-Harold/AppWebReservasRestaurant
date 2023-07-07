@@ -4,7 +4,12 @@ body{
     margin: 0 auto;
     background-color: whitesmoke;
 }
-
+.contenido-rest{
+    padding: 1px;
+    width: min(100%,800px);
+    display: flex;
+    flex-wrap: wrap;
+}
 /**/
 .nav-head{
     width: 100%;
@@ -80,7 +85,7 @@ input,select{
     color: rgb(196, 112, 39);
 }
 p{
-    margin: 1.5% 0;
+    margin: 0.5% 0;
 }
 
 .cont-nav{
@@ -95,21 +100,19 @@ footer,.redes-contactos{
     width: 100%;
     height: fit-content;
     display:flex;
-    align-content: center;
-    justify-content: center;
+    justify-content: space-around;
     margin: 0;
-    padding: 0;
+    padding: 1px;
 }
 footer{
     margin-top: 8px;
     background-color: rgb(230, 126, 34 );
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
+    border-top-left-radius: 1% 32%;
+    border-top-right-radius: 1% 32%;
 }
 .redes{
-    margin: 1%;
     color: whitesmoke;
-    letter-spacing: 0.09em;
+    letter-spacing: 0.15em;
 }
 .nombre-red-social{
     font-size: 0.8em;
@@ -173,10 +176,6 @@ img{
 }
 .menu-links-list{
     padding: 0.8em;
-}
-.restaurantes{
-    display: flex;
-    flex-wrap:wrap;
 }
 .nombre-rest{
     width: 65%;
@@ -252,10 +251,8 @@ img{
     width: 100%;
 }
 .cont-restaurante{
-    height: fit-content;
     flex-grow: 1;
     flex-basis: 100px;
-    width: 55%;
     height: 330px;
     margin: 2%;
     border-radius: 15px;
@@ -300,9 +297,6 @@ img{
     .toggle-menu{
         display: none;
     }
-}
-/* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {
     .titulo{
         color:green;
     }
@@ -325,18 +319,43 @@ img{
     }
     .name-negocio{
         top:20px;
-        left:90px;
+        left:100px;
     }
     .logo{
         top:18px;
         left:20px;
     }
+}
+@media screen and (min-width:650px) {
+    .restaurantes{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contenido-rest{
+        margin: 1%;
+        box-shadow: 0px 0px 9px 0px rgb(228, 228, 228);
+    }
+}
+@media screen and (min-width:884px) {
+    .eslog{
+        width: 289px;
+        height: 267px;
+    }
+}
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
     .buscar{
-        height: 232px;
+        height: 243px;
     }
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
-
+@media (min-width: 1055px) {
+    .buscar{
+        height: 275px;
+    }
+    .name-negocio{
+        left:140px;
+    }
 }
